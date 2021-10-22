@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Cold Calling</string>
+
+    <string name="name">Student Name</string>
+    <string name="random">Click to select a student</string>
+    <string name="uncalled">Uncalled Log</string>
+    <string name="called">Called Log</string>
+
+
+    <string name="freq">Number of Times called: </string>
+    <string name="recent">Last time called: </string>
+    <string name="warn">Student has been called twice within 40 min</string>
+
+    <string-array name="name_array">
+        <item>Aamir Ali</item>
+        <item>Dhruv Amin</item>
+        <item>Alexander Aney</item>
+        <item>Daniel Belkin</item>
+        <item>Eli Bui</item>
+        <item>Noam Canter</item>
+        <item>Kenny Cao</item>
+        <item>Gareth Chaston</item>
+        <item>Matthew Chen</item>
+        <item>Shuyue Chen</item>
+        <item>Bipra Dey</item>
+        <item>Darren Dong</item>
+        <item>Daniel Dultsin</item>
+        <item>Xinrui Ge</item>
+        <item>Vaibhav Hariani</item>V
+        <item>Jerry He</item>
+        <item>Mohammed Ithisham</item>
+        <item>Fardin Iqbal</item>
+        <item>Samuel Iskhakov</item>
+        <item>Sean Kerrigan</item>
+        <item>Eden Kogan</item>
+        <item>Selina Li</item>
+        <item>Ming Lin</item>
+        <item>Sebastian Marinescu</item>
+        <item>Zhian Maysoon</item>
+        <item>Ralf Pacia</item>
+        <item>Evelyn Paskhaver</item>
+        <item>Vasu Patel</item>
+        <item>Tejas Ravi</item>
+        <item>Marc Rosenberg</item>
+        <item>Tanushri Sundaram</item>
+        <item>Dennis Wang</item>
+        <item>Michael Wu</item>
+        <item>Adrian Yan</item>
+    </string-array>
+
+</resources>
