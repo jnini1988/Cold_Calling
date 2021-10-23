@@ -12,11 +12,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import java.time.Duration;
-import java.time.Instant;
 import java.util.ArrayList;
-import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
     private Button mRandomButton,mUncalledButton,mCalledButton;
@@ -77,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v){
                 for(Student s:called) {
-                    if (!s.calledWithinDay()) {
+                    if (s.calledOverADay()) {
                         called.remove(s);
                         uncalled.add(s.getName());
                     }

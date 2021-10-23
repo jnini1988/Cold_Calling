@@ -1,9 +1,7 @@
 package com.example.coldcalling;
 
 import android.os.Build;
-
 import androidx.annotation.RequiresApi;
-
 import java.io.Serializable;
 import java.time.Duration;
 import java.time.Instant;
@@ -14,6 +12,7 @@ public class Student implements Serializable {
     private String name;
     private String mImgResId;
     private ArrayList<Instant> callTime = new ArrayList<>();
+    private static final String TAG="test";
 
     public Student(String studentName){
         name=studentName;
@@ -41,10 +40,11 @@ public class Student implements Serializable {
 
     public ArrayList<Instant> getCallTime() { return callTime; }
 
+    public int getFreq(){ return callTime.size();}
+
     @RequiresApi(api = Build.VERSION_CODES.O)
-    public boolean calledWithinDay(){
-        int freq = callTime.size();
-        if(freq!=0 && Duration.between(Instant.now(),callTime.get(freq-1)).toHours()<24){
+    public boolean calledOverADay(){
+        if(Duration.between(Instant.now(),callTime.get(getFreq()-1)).toHours()>24){
             return true;
         }
         return false;
@@ -52,9 +52,9 @@ public class Student implements Serializable {
 
     @RequiresApi(api = Build.VERSION_CODES.O)
     public boolean calledTwiceFM(){
-        int freq=callTime.size();
         long millisMin= (long) (Math.pow(2.4,6)*40);
-        if(freq>2 && Duration.between(callTime.get(freq-2),callTime.get(freq-1)).toMillis()<millisMin){
+        if(getFreq()>=2 &&
+                Duration.between(callTime.get(getFreq()-2),callTime.get(getFreq()-1)).toMillis()<millisMin){
             return true;
         }
         return false;

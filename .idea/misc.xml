@@ -3,9 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/chenc/AndroidStudioProjects/ColdCalling/app/src/main/res/layout/activity_called.xml" value="0.12708333333333333" />
+        <entry key="..\:/Users/chenc/AndroidStudioProjects/ColdCalling/app/src/main/res/layout/activity_called.xml" value="0.1" />
         <entry key="..\:/Users/chenc/AndroidStudioProjects/ColdCalling/app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="..\:/Users/chenc/AndroidStudioProjects/ColdCalling/app/src/main/res/layout/activity_uncalled.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/chenc/AndroidStudioProjects/ColdCalling/app/src/main/res/layout/activity_uncalled.xml" value="0.1" />
+        <entry key="..\:/Users/chenc/AndroidStudioProjects/ColdCalling/app/src/main/res/layout/called_row.xml" value="0.175" />
         <entry key="..\:/Users/chenc/AndroidStudioProjects/ColdCalling/app/src/main/res/layout/row.xml" value="0.26666666666666666" />
         <entry key="..\:/Users/chenc/AndroidStudioProjects/ColdCalling/app/src/main/res/layout/uncalled_row.xml" value="0.3333333333333333" />
       </map>

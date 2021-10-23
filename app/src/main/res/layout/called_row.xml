@@ -5,24 +5,22 @@
     android:orientation="vertical">
 
     <TextView
-        android:id="@+id/name"
-        android:text="test"
+        android:id="@+id/nameView"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:textSize="16sp"
         android:textStyle="bold"
+        android:textColor="#4B1BB9"
         android:padding="5dp" />
 
     <TextView
-        android:id="@+id/frequency"
-        android:text="@string/freq"
+        android:id="@+id/freqView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="5dp" />
 
     <TextView
-        android:id="@+id/recentCall"
-        android:text="@string/recent"
+        android:id="@+id/recentView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="5dp" />

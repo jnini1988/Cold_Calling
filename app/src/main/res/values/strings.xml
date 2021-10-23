@@ -5,10 +5,8 @@
     <string name="random">Click to select a student</string>
     <string name="uncalled">Uncalled Log</string>
     <string name="called">Called Log</string>
+    <string name="back">Back</string>
 
-
-    <string name="freq">Number of Times called: </string>
-    <string name="recent">Last time called: </string>
     <string name="warn">Student has been called twice within 40 min</string>
 
     <string-array name="name_array">
