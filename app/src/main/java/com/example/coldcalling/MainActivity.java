@@ -18,13 +18,8 @@ public class MainActivity extends AppCompatActivity {
     private Button mRandomButton,mUncalledButton,mCalledButton;
     private TextView mNameTextView;
     private ImageView mProfileView;
-    private ArrayList<Student> called = new ArrayList<>(); //change string to student
+    private ArrayList<Student> called = new ArrayList<>();
     private ArrayList<String> uncalled = new ArrayList<>();
-    private static final String TAG = "Test";
-
-    //TODO: In called log, column for student's last call time, number of time student has been called today(clear instant arraylist after one day)
-    //TODO: EXTRA: maybe use relative layout? so horizontal screen would also work
-    //TODO: Unnecessary/EXTRA: sort list alphabetically
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,7 +48,6 @@ public class MainActivity extends AppCompatActivity {
                 Student picked = mStudentList[(int)(Math.random()*classSize)];
                 picked.addTime();
                 if(picked.calledTwiceFM()){
-                    Log.i(TAG,"reached");
                     int warnResId=R.string.warn;
                     Toast.makeText(MainActivity.this,warnResId,Toast.LENGTH_SHORT).show();
                 }

@@ -12,7 +12,6 @@ public class Called extends AppCompatActivity {
     private ArrayList<Student> called;
     private ListView mCalledView;
     private Button backButton;
-    private static String cList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

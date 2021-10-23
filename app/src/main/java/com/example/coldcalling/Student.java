@@ -12,23 +12,16 @@ public class Student implements Serializable {
     private String name;
     private String mImgResId;
     private ArrayList<Instant> callTime = new ArrayList<>();
-    private static final String TAG="test";
 
     public Student(String studentName){
         name=studentName;
         mImgResId=getImgName(name);
     }
 
-    public void setName(String sName) {
-        name = sName;
-    }
     public String getName(){
         return name;
     }
 
-    public void setImgResId(String imgResId) {
-        mImgResId = imgResId;
-    }
     public String getImgResId() {
         return mImgResId;
     }
