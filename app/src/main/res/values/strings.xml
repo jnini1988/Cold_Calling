@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Cold Calling</string>
 
+    <string name="className">APP Dev Period 2</string>
     <string name="name">Student Name</string>
     <string name="random">Click to select a student</string>
     <string name="uncalled">Uncalled Log</string>

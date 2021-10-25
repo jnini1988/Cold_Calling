@@ -6,10 +6,10 @@ import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextClock;
 import android.widget.TextView;
 import android.widget.Toast;
 import java.util.ArrayList;
@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
     private ImageView mProfileView;
     private ArrayList<Student> called = new ArrayList<>();
     private ArrayList<String> uncalled = new ArrayList<>();
+    private TextClock clock;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +31,10 @@ public class MainActivity extends AppCompatActivity {
         mUncalledButton=(Button)findViewById(R.id.uncalled_button);
         mCalledButton=(Button)findViewById(R.id.called_button);
         mProfileView=(ImageView)findViewById(R.id.profile_view);
+
+        clock=(TextClock)findViewById(R.id.time_view);
+        clock.setFormat12Hour(null);
+        clock.setFormat24Hour("MMM-dd-yyyy HH:mm");
 
         String[] nameList = getResources().getStringArray(R.array.name_array);
         int classSize = nameList.length;
